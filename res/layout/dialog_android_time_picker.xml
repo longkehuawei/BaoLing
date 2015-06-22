@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/dialog_1_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/text_white" android:id="@+id/dcon_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/loging_margin_default_larger" android:text="@string/confirmation_time_picker" />
+    <TextView android:background="@color/textview_bg" android:layout_width="fill_parent" android:layout_height="@dimen/undline_height" android:layout_marginLeft="@dimen/loging_margin_default_larger" android:layout_marginRight="@dimen/loging_margin_default_larger" />
+    <TimePicker android:id="@+id/timePic1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/loging_margin_default">
+        <Button android:textColor="#ff000099" android:id="@+id/dcon_ok" android:background="@drawable/dialog_btn_selector" android:layout_width="100.0dip" android:layout_height="36.0dip" android:layout_marginRight="15.0dip" android:text="@string/btn_ok" android:layout_weight="1.0" />
+        <Button android:textColor="#ff000099" android:id="@+id/dcon_can" android:background="@drawable/dialog_btn_selector" android:layout_width="100.0dip" android:layout_height="36.0dip" android:layout_marginLeft="15.0dip" android:text="@string/btn_cancel" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

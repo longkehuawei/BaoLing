@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="@dimen/title_btn_1_margin_right" android:paddingRight="@dimen/title_btn_1_margin_right" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/title_text_size" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/bas_ok" android:background="@drawable/dialog_btn_selector" android:layout_width="@dimen/bottom_bar_btn_width" android:layout_height="@dimen/bottom_bar_btn_height" android:layout_marginRight="42.0dip" android:text="@string/btn_ok" android:layout_weight="1.0" style="@style/btn_style_2" />
+        <Button android:textSize="@dimen/title_text_size" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/bas_again" android:background="@drawable/dialog_btn_selector" android:layout_width="@dimen/bottom_bar_btn_width" android:layout_height="@dimen/bottom_bar_btn_height" android:text="@string/set_again" android:layout_weight="1.0" style="@style/btn_style_2" />
+    </LinearLayout>
+</LinearLayout>

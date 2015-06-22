@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="85.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="85.0dip" android:layout_height="85.0dip">
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_diao_photo_bg" android:background="@drawable/bg_red" android:layout_width="85.0dip" android:layout_height="85.0dip" />
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_diao_photo_relation" android:layout_width="80.0dip" android:layout_height="80.0dip" />
+    </FrameLayout>
+    <TextView android:gravity="center" android:id="@+id/tv_diao_photo_name" android:layout_width="85.0dip" android:layout_height="wrap_content" />
+</LinearLayout>

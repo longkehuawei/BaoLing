@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/login_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/common_title_bg_colors" android:layout_width="fill_parent" android:layout_height="@dimen/title_usual_height">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/title_text_size" android:gravity="center_vertical" android:id="@+id/bas_title" android:background="@drawable/lin_common_bg_selector" android:paddingLeft="@dimen/loging_margin_small" android:paddingRight="@dimen/loging_margin" android:layout_width="50.0dip" android:layout_height="fill_parent" android:text="@string/safety_area" android:drawableLeft="@drawable/top_back_btn1" android:drawablePadding="@dimen/loging_margin_default" />
+        <TextView android:textSize="24.0sp" android:textColor="@color/text_white" android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/safety_area" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center" android:id="@+id/line_bas_draw" android:background="@drawable/lin_common_bg_selector" android:layout_width="50.0dip" android:layout_height="50.0dip">
+            <TextView android:textSize="20.0sp" android:textColor="@color/text_white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/set" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.baidu.mapapi.map.MapView android:id="@+id/bas_bmapsView" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@+id/bas_relativeLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="bottom|left|center" android:id="@+id/bas_location_type" android:background="@drawable/to_last_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" />
+        <LinearLayout android:layout_gravity="bottom|right|center" android:orientation="horizontal" android:id="@+id/line_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip">
+            <ImageButton android:id="@+id/ib_map_fangda_area" android:background="@drawable/map_zoon_fangda_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+            <ImageButton android:id="@+id/ib_map_suoxiao_area" android:background="@drawable/map_zoon_suoxiao_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/bas_lin" android:background="@color/common_title_bg_colors" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_usual_height" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/text_white" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textColor="#ff878787" android:gravity="center_vertical" android:id="@+id/id_last_month" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sport_last_month" android:drawableLeft="@drawable/back_sport_left_selector" />
+        <TextView android:gravity="center_horizontal" android:id="@+id/id_year_month" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textColor="#ff878787" android:gravity="center_vertical" android:id="@+id/id_next_month" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sport_next_month" android:drawableRight="@drawable/back_sport_right_selector" />
+    </LinearLayout>
+    <com.cwtcn.kt.ui.MyCalendarView android:id="@+id/calendarView" android:layout_width="fill_parent" android:layout_height="200.0dip" />
+</LinearLayout>

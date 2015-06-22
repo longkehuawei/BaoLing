@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="200.0dip"
+    android:background="@drawable/dialog_1_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_add_child_by_scan"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginLeft="25.0dip"
+        android:layout_marginRight="25.0dip"
+        android:layout_weight="1.0"
+        android:drawablePadding="@dimen/loging_margin_default_larger"
+        android:gravity="left|center"
+        android:paddingLeft="10.0dip"
+        android:text="@string/add_by_scan_qrcode"
+        android:textColor="@color/text_color_selector"
+        android:textSize="20.0sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/undline_height"
+        android:layout_marginLeft="@dimen/loging_margin"
+        android:layout_marginRight="@dimen/loging_margin"
+        android:background="@drawable/textview_bg" />
+
+    <TextView
+        android:id="@+id/tv_add_child_by_other"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginLeft="25.0dip"
+        android:layout_marginRight="25.0dip"
+        android:layout_weight="1.0"
+        android:drawablePadding="@dimen/loging_margin_default_larger"
+        android:gravity="left|center"
+        android:paddingLeft="10.0dip"
+        android:text="@string/add_by_other"
+        android:textColor="@color/text_color_selector"
+        android:textSize="20.0sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/undline_height"
+        android:layout_marginLeft="@dimen/loging_margin"
+        android:layout_marginRight="@dimen/loging_margin"
+        android:background="@drawable/textview_bg" />
+
+    <TextView
+        android:id="@+id/od_obj_data"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginLeft="25.0dip"
+        android:layout_marginRight="25.0dip"
+        android:layout_weight="1.0"
+        android:drawableLeft="@drawable/mms_data"
+        android:drawablePadding="@dimen/loging_margin_default_larger"
+        android:gravity="left|center"
+        android:paddingLeft="10.0dip"
+        android:text="@string/mms_data"
+        android:textColor="@color/text_color_selector"
+        android:textSize="20.0sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/undline_height"
+        android:layout_marginLeft="@dimen/loging_margin"
+        android:layout_marginRight="@dimen/loging_margin"
+        android:background="@drawable/textview_bg"
+        android:visibility="gone" />
+
+</LinearLayout>

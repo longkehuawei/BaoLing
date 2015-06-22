@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@color/common_title_bg_colors"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="50.0dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/lin_common_bg_selector"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_back_btn1" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/policy_join_plan"
+            android:textColor="@color/text_white"
+            android:textSize="24.0sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12.0dip"
+                android:paddingLeft="20.0dip"
+                android:text="@string/policy_ph_message"
+                android:textSize="@dimen/policy_text_size1" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:background="@drawable/about_us_devider_line_bg" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="30.0dip" >
+
+                <TextView
+                    android:id="@+id/tv_relation"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.0"
+                    android:singleLine="true"
+                    android:text="@string/policy_relation"
+                    android:textSize="@dimen/policy_text_size1" />
+
+                <LinearLayout
+                    android:id="@+id/ll_relation"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/item_margin_right"
+                    android:layout_weight="3.0"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:paddingRight="25.0dip" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_father"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:id="@+id/radiobtn_security_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_father"
+                            android:textSize="@dimen/policy_text_size1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_mather"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:id="@+id/radiobtn_security_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_mother"
+                            android:textSize="@dimen/policy_text_size1" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30.0dip"
+                android:singleLine="true"
+                android:text="@string/policy_only_fa_or_ma"
+                android:textColor="#ff555555"
+                android:textSize="@dimen/policy_text_size2" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12.0dip"
+                android:orientation="horizontal"
+                android:paddingLeft="30.0dip" >
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.0"
+                    android:singleLine="true"
+                    android:text="@string/policy_name"
+                    android:textSize="@dimen/policy_text_size1" />
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="0.0dip"
+                    android:layout_height="@dimen/policy_et_height"
+                    android:layout_marginRight="@dimen/item_margin_right"
+                    android:layout_weight="3.5"
+                    android:background="@drawable/common_edit_bg"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="@dimen/edit_padding_left"
+                    android:textColor="@color/edittext_color"
+                    android:textSize="@dimen/policy_text_size1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12.0dip"
+                android:orientation="horizontal"
+                android:paddingLeft="30.0dip" >
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.0"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="@string/policy_idcard"
+                    android:textSize="@dimen/policy_text_size1" />
+
+                <EditText
+                    android:id="@+id/et_idcard"
+                    android:layout_width="0.0dip"
+                    android:layout_height="@dimen/policy_et_height"
+                    android:layout_marginRight="@dimen/item_margin_right"
+                    android:layout_weight="3.5"
+                    android:background="@drawable/common_edit_bg"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/edit_padding_left"
+                    android:textColor="@color/edittext_color"
+                    android:textSize="@dimen/policy_text_size1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12.0dip"
+                android:orientation="horizontal"
+                android:paddingLeft="30.0dip" >
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.0"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:text="@string/policy_phone"
+                    android:textSize="@dimen/policy_text_size1" />
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    android:layout_width="0.0dip"
+                    android:layout_height="@dimen/policy_et_height"
+                    android:layout_marginRight="@dimen/item_margin_right"
+                    android:layout_weight="3.5"
+                    android:background="@drawable/common_edit_bg"
+                    android:ems="10"
+                    android:hint=""
+                    android:inputType="phone"
+                    android:paddingLeft="@dimen/edit_padding_left"
+                    android:textColor="@color/edittext_color"
+                    android:textSize="@dimen/policy_text_size1" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30.0dip"
+                android:singleLine="true"
+                android:text="@string/policy_to_contact_you"
+                android:textColor="#ff555555"
+                android:textSize="@dimen/policy_text_size2" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12.0dip"
+                android:orientation="horizontal"
+                android:paddingLeft="30.0dip" >
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.0"
+                    android:singleLine="true"
+                    android:text="@string/policy_email"
+                    android:textSize="@dimen/policy_text_size1" />
+
+                <com.cwtcn.kt.ui.EmailAutoCompleteTextView
+                    android:id="@+id/et_email"
+                    android:layout_width="0.0dip"
+                    android:layout_height="@dimen/policy_et_height"
+                    android:layout_marginRight="@dimen/item_margin_right"
+                    android:layout_weight="3.5"
+                    android:background="@drawable/common_edit_bg"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="@dimen/edit_padding_left"
+                    android:textColor="@color/edittext_color"
+                    android:textSize="@dimen/policy_text_size1" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12.0dip"
+                android:paddingLeft="30.0dip"
+                android:singleLine="true"
+                android:text="@string/policy_to_receive"
+                android:textColor="#ff555555"
+                android:textSize="@dimen/policy_text_size2" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="20.0dip"
+                android:paddingRight="25.0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10.0dip"
+                    android:text="@string/policy_child_message"
+                    android:textSize="@dimen/policy_text_size1" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:maxLines="2"
+                    android:text="@string/policy_age_and_timeout"
+                    android:textColor="#ff555555"
+                    android:textSize="@dimen/policy_text_size2" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:background="@drawable/about_us_devider_line_bg" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12.0dip"
+                android:orientation="horizontal"
+                android:paddingLeft="30.0dip" >
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.0"
+                    android:singleLine="true"
+                    android:text="@string/policy_name"
+                    android:textSize="@dimen/policy_text_size1" />
+
+                <EditText
+                    android:id="@+id/et_child_name"
+                    android:layout_width="0.0dip"
+                    android:layout_height="@dimen/policy_et_height"
+                    android:layout_marginRight="@dimen/item_margin_right"
+                    android:layout_weight="3.5"
+                    android:background="@drawable/common_edit_bg"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="@dimen/edit_padding_left"
+                    android:textColor="@color/edittext_color"
+                    android:textSize="@dimen/policy_text_size1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12.0dip"
+                android:orientation="horizontal"
+                android:paddingLeft="30.0dip" >
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.0"
+                    android:text="@string/policy_child_idcard"
+                    android:textSize="@dimen/policy_text_size1" />
+
+                <EditText
+                    android:id="@+id/et_child_idcard"
+                    android:layout_width="0.0dip"
+                    android:layout_height="@dimen/policy_et_height"
+                    android:layout_marginRight="@dimen/item_margin_right"
+                    android:layout_weight="3.5"
+                    android:background="@drawable/common_edit_bg"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/edit_padding_left"
+                    android:textColor="@color/edittext_color"
+                    android:textSize="@dimen/policy_text_size1" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30.0dip"
+                android:singleLine="true"
+                android:text="@string/policy_find_child_idcard"
+                android:textColor="#ff555555"
+                android:textSize="@dimen/policy_text_size2" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12.0dip"
+                android:orientation="horizontal"
+                android:paddingLeft="30.0dip" >
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.0"
+                    android:singleLine="true"
+                    android:text="@string/policy_address"
+                    android:textSize="@dimen/policy_text_size1" />
+
+                <Spinner
+                    android:id="@+id/sp_address"
+                    android:layout_width="0.0dip"
+                    android:layout_height="@dimen/policy_et_height"
+                    android:layout_marginRight="@dimen/item_margin_right"
+                    android:layout_weight="3.5"
+                    android:background="@drawable/btn_red_bg_press_selector"
+                    android:textSize="@dimen/policy_text_size1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:orientation="horizontal"
+                android:paddingTop="10.0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/policy_favoree"
+                    android:textSize="@dimen/policy_text_size1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/policy_egal_owner"
+                    android:textSize="@dimen/policy_text_size1" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:background="@drawable/about_us_devider_line_bg" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="30.0dip"
+                android:paddingRight="25.0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/policy_ph_signature"
+                    android:textSize="@dimen/policy_text_size1" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/policy_signatur_by_hand"
+                    android:textColor="#ff555555"
+                    android:textSize="@dimen/policy_text_size2" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" >
+
+                <ImageView
+                    android:id="@+id/iv_signature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+
+                <ImageView
+                    android:id="@+id/pen_modify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/modify" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="30.0dip"
+                android:paddingRight="25.0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/policy_attention"
+                    android:textColor="#ff555555"
+                    android:textSize="@dimen/policy_text_size2" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/policy_free_only_once"
+                    android:textColor="#ff555555"
+                    android:textSize="@dimen/policy_text_size2" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/remember_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="40.0dip"
+            android:paddingRight="40.0dip"
+            android:paddingTop="10.0dip" >
+
+            <ImageView
+                android:id="@+id/iv_read"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_sign_pwd_off_on" />
+
+            <TextView
+                android:id="@+id/tv_article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="@string/policy_read_already"
+                android:textColor="#ff555555"
+                android:textSize="@dimen/policy_text_size2" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_join"
+            android:layout_width="fill_parent"
+            android:layout_height="43.0dip"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20.0dip"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/btn_common_bg_selector_green"
+            android:text="@string/policy_confirm_and_join"
+            android:textColor="@android:color/white"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+</LinearLayout>

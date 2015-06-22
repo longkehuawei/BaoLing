@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/dialog_1_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/text_white" android:id="@+id/tv_dialong_create_group_title" android:paddingLeft="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/loging_margin_default_larger" android:text="正在创建新群" />
+    <TextView android:textColor="@color/text_white" android:background="#d8ffffff" android:layout_width="fill_parent" android:layout_height="@dimen/undline_height" android:layout_marginLeft="@dimen/loging_margin_default_larger" android:layout_marginRight="@dimen/loging_margin_default_larger" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@+id/tv_dialog_create_group_msg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="群名称:" android:layout_weight="2.0" />
+        <EditText android:textSize="18.0sp" android:textColor="@color/edittext_color" android:id="@+id/et_dialog_create_group_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/loging_margin" android:singleLine="true" android:layout_weight="8.0" />
+    </LinearLayout>
+    <View android:background="@drawable/textview_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="46.0dip">
+        <RelativeLayout android:background="@drawable/dialog_btn_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:textSize="17.0sp" android:textColor="#ffffffff" android:id="@+id/btn_dialog_create_group_cancel" android:background="@drawable/dialog_btn_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="取消" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <View android:background="@drawable/divider_line_land" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <RelativeLayout android:background="@drawable/dialog_btn_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:textSize="17.0sp" android:textColor="#ffffffff" android:id="@+id/btn_dialog_create_groupe_ok" android:background="@drawable/dialog_btn_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="成立群" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

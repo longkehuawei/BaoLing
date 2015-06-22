@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_1_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_marginLeft="25.0dip"
+        android:layout_marginRight="25.0dip"
+        android:drawableLeft="@drawable/edit_view"
+        android:drawablePadding="@dimen/loging_margin_default_larger"
+        android:gravity="left|center"
+        android:paddingLeft="10.0dip"
+        android:text="@string/_edit_obj"
+        android:textColor="@color/text_color_selector"
+        android:textSize="20.0sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/undline_height"
+        android:layout_marginLeft="@dimen/loging_margin"
+        android:layout_marginRight="@dimen/loging_margin"
+        android:background="@drawable/textview_bg" />
+
+    <TextView
+        android:id="@+id/tv_del"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_marginLeft="25.0dip"
+        android:layout_marginRight="25.0dip"
+        android:drawableLeft="@drawable/delete_info"
+        android:drawablePadding="@dimen/loging_margin_default_larger"
+        android:gravity="left|center"
+        android:paddingLeft="10.0dip"
+        android:text="@string/_delete"
+        android:textColor="@color/text_color_selector"
+        android:textSize="20.0sp" />
+
+</LinearLayout>

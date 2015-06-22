@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/dialog_1_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/od_admin"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginLeft="25.0dip"
+        android:layout_marginRight="25.0dip"
+        android:layout_weight="1.0"
+        android:drawableLeft="@drawable/admin_view"
+        android:drawablePadding="@dimen/loging_margin_default_larger"
+        android:gravity="left|center"
+        android:paddingLeft="10.0dip"
+        android:text="查看孩子管理员"
+        android:textColor="@color/text_color_selector"
+        android:textSize="20.0sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/undline_height"
+        android:layout_marginLeft="@dimen/loging_margin"
+        android:layout_marginRight="@dimen/loging_margin"
+        android:background="@drawable/textview_bg"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/od_check"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginLeft="25.0dip"
+        android:layout_marginRight="25.0dip"
+        android:layout_weight="1.0"
+        android:drawableLeft="@drawable/check_view"
+        android:drawablePadding="@dimen/loging_margin_default_larger"
+        android:gravity="left|center"
+        android:paddingLeft="10.0dip"
+        android:text="@string/check_data"
+        android:textColor="@color/text_color_selector"
+        android:textSize="20.0sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/undline_height"
+        android:layout_marginLeft="@dimen/loging_margin"
+        android:layout_marginRight="@dimen/loging_margin"
+        android:background="@drawable/textview_bg" />
+
+    <TextView
+        android:id="@+id/od_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginLeft="25.0dip"
+        android:layout_marginRight="25.0dip"
+        android:layout_weight="1.0"
+        android:drawableLeft="@drawable/edit_view"
+        android:drawablePadding="@dimen/loging_margin_default_larger"
+        android:gravity="left|center"
+        android:paddingLeft="10.0dip"
+        android:text="@string/_edit_obj"
+        android:textColor="@color/text_color_selector"
+        android:textSize="20.0sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/undline_height"
+        android:layout_marginLeft="@dimen/loging_margin"
+        android:layout_marginRight="@dimen/loging_margin"
+        android:background="@drawable/textview_bg" />
+
+    <TextView
+        android:id="@+id/od_del"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginLeft="25.0dip"
+        android:layout_marginRight="25.0dip"
+        android:layout_weight="1.0"
+        android:drawableLeft="@drawable/delete_info"
+        android:drawablePadding="@dimen/loging_margin_default_larger"
+        android:gravity="left|center"
+        android:paddingLeft="10.0dip"
+        android:text="@string/_delete"
+        android:textColor="@color/text_color_selector"
+        android:textSize="20.0sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/undline_height"
+        android:layout_marginLeft="@dimen/loging_margin"
+        android:layout_marginRight="@dimen/loging_margin"
+        android:background="@drawable/textview_bg" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/undline_height"
+        android:layout_marginLeft="@dimen/loging_margin"
+        android:layout_marginRight="@dimen/loging_margin"
+        android:background="@drawable/textview_bg"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/od_set_time"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginLeft="25.0dip"
+        android:layout_marginRight="25.0dip"
+        android:layout_weight="1.0"
+        android:drawableLeft="@drawable/ic_time_tracker_reset"
+        android:drawablePadding="@dimen/loging_margin_default_larger"
+        android:gravity="left|center"
+        android:paddingLeft="10.0dip"
+        android:text="@string/dialog_set_time"
+        android:textColor="@color/text_color_selector"
+        android:textSize="20.0sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/undline_height"
+        android:layout_marginLeft="@dimen/loging_margin"
+        android:layout_marginRight="@dimen/loging_margin"
+        android:background="@drawable/textview_bg" />
+
+    <TextView
+        android:id="@+id/od_reset_factory"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginLeft="25.0dip"
+        android:layout_marginRight="25.0dip"
+        android:layout_weight="1.0"
+        android:drawableLeft="@drawable/ic_reset_factory"
+        android:drawablePadding="@dimen/loging_margin_default_larger"
+        android:gravity="left|center"
+        android:paddingLeft="10.0dip"
+        android:text="@string/reset_factory_title"
+        android:textColor="@color/text_color_selector"
+        android:textSize="20.0sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/undline_height"
+        android:layout_marginLeft="@dimen/loging_margin"
+        android:layout_marginRight="@dimen/loging_margin"
+        android:background="@drawable/textview_bg" />
+
+    <TextView
+        android:id="@+id/od_ota_updata"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginLeft="25.0dip"
+        android:layout_marginRight="25.0dip"
+        android:layout_weight="1.0"
+        android:drawableLeft="@drawable/ic_updata_ota"
+        android:drawablePadding="@dimen/loging_margin_default_larger"
+        android:gravity="left|center"
+        android:paddingLeft="10.0dip"
+        android:text="@string/ota_updata"
+        android:textColor="@color/text_color_selector"
+        android:textSize="20.0sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/undline_height"
+        android:layout_marginLeft="@dimen/loging_margin"
+        android:layout_marginRight="@dimen/loging_margin"
+        android:background="@drawable/textview_bg"
+        android:visibility="gone" />
+
+</LinearLayout>

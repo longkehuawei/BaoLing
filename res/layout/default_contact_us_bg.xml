@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/login_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:background="@color/common_title_bg_colors" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <LinearLayout android:gravity="center" android:id="@+id/def_cont_us_back" android:background="@drawable/lin_common_bg_selector" android:layout_width="50.0dip" android:layout_height="fill_parent">
+            <ImageView android:background="@drawable/top_back_btn1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="24.0sp" android:textColor="@color/text_white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginRight="50.0dip" android:text="@string/contact_us" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

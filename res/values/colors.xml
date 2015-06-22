@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="umeng_socialize_comments_bg">#fff4f4f4</color>
+    <color name="umeng_socialize_color_group">#ff2c3035</color>
+    <color name="umeng_socialize_list_item_textcolor">#ff333333</color>
+    <color name="umeng_socialize_list_item_bgcolor">#ffffffff</color>
+    <color name="umeng_socialize_divider">#ffe6e6e6</color>
+    <color name="umeng_socialize_text_time">#ff999999</color>
+    <color name="umeng_socialize_text_title">#ff464f61</color>
+    <color name="umeng_socialize_text_friends_list">#ff959696</color>
+    <color name="umeng_socialize_text_share_content">#ff666666</color>
+    <color name="umeng_socialize_ucenter_bg">#ffeeeeee</color>
+    <color name="umeng_socialize_text_ucenter">#ff595959</color>
+    <color name="umeng_socialize_edit_bg">#ffc4c4c4</color>
+    <color name="umeng_socialize_grid_divider_line">#fff8f8f8</color>
+    <color name="c_bg">#b0000000</color>
+    <color name="textview_bg">#30000000</color>
+    <color name="textview_bg_default">#00000000</color>
+    <color name="tab_tv_bg">#ff3bafda</color>
+    <color name="tab_tv_bg_default">#ff4fc1e9</color>
+    <color name="confrim_dialog">#ff242424</color>
+    <color name="text_white">#ffffffff</color>
+    <color name="text_gray">#ff708090</color>
+    <color name="text_black">#ff000000</color>
+    <color name="setting_press">#ff80d6f2</color>
+    <color name="back">#ff000000</color>
+    <color name="litelt_blue">#ffacd6ff</color>
+    <color name="text878787">#ff878787</color>
+    <color name="login_bg">#fff4fffe</color>
+    <color name="blue5CD4E1">#ff5cd4e1</color>
+    <color name="red_feaa3e">#fffeaa3e</color>
+    <color name="blue_13b5b1">#ff13b5b1</color>
+    <color name="setting_item_text_color">#ffcfcfcf</color>
+    <color name="setting_item_text_shadow">#ff1d1812</color>
+    <color name="setting_item_divide_color">#ff1d1812</color>
+    <color name="setting_item_text_view">#ff333333</color>
+    <color name="about_us_text_press">#ff0089f4</color>
+    <color name="common_title_bg_colors">#ff13b5b1</color>
+    <color name="common_title_bg_colors_press">#ff0d716f</color>
+    <color name="common_group_title_bg">#ff3fc68b</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="color_transparent">@android:color/transparent</color>
+    <color name="edittext_color">#ff000000</color>
+    <color name="edittextcursor_color">#88888888</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#00FF00</color>
+    <color name="green_dark">#9CDC6A</color>
+    <color name="blue">#33B5E5</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#7c7c7c</color>
+    <color name="gray_white">#ebebeb</color>
+    <color name="gray_light">#887c7c7c</color>
+    <color name="gray_dark">#2e2e2e</color>
+    <color name="yellow">#FFFC00</color>
+    <color name="pink">#FF87EF</color>
+    <color name="orange">#ff6200</color>
+    <color name="list_divider">#D3D3D3</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_bg">#88838B8B</color>
+    
+    <!-- added by Barry -->
+    <color name="add_photo_bg">#13B5B1</color>
+    <color name="divider">#616665</color>
+    
+    <color name="menu_fragment_background">#B3000000</color>
+    <color name="menu_item_background">#f2f2f2</color>
+    <color name="divider_color">#b5b5b5</color>
+    
+    <color name="menu_icon_selected">#3ECCDC</color>
+    <color name="menu_icon_un_sel">#8D8D8D</color>
+    
+</resources>

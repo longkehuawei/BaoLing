@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/login_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:background="@color/common_title_bg_colors" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <LinearLayout android:gravity="center" android:id="@+id/line_group_main_back" android:background="@drawable/lin_common_bg_selector" android:layout_width="50.0dip" android:layout_height="fill_parent">
+            <ImageView android:background="@drawable/top_back_btn1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="24.0sp" android:textColor="@color/text_white" android:gravity="center" android:id="@+id/tv_group_main_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginRight="50.0dip" android:text="群聊天啊" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/tv_group_main_sel_1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="选项卡1" android:layout_weight="1.0" />
+        <TextView android:textSize="18.0sp" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/tv_group_main_sel_2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="选项卡2" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageView android:id="@+id/iv_group_main_sel_anim" android:background="@drawable/id_category_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="matrix" />
+    <android.support.v4.view.ViewPager android:id="@+id/vp_group_main_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

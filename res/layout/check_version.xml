@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dialog_1_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/text_white" android:gravity="left" android:id="@+id/textView1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:layout_marginLeft="10.0dip" android:text="@string/btn_upgrade" />
+    <TextView android:textColor="@color/text_white" android:background="#d8ffffff" android:layout_width="fill_parent" android:layout_height="@dimen/undline_height" android:layout_marginLeft="@dimen/loging_margin_default_larger" android:layout_marginRight="@dimen/loging_margin_default_larger" />
+    <TextView android:textColor="#fff1f1f1" android:gravity="center_vertical" android:id="@+id/textView3" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/loging_margin" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="10.0dip" android:maxLines="10" android:singleLine="false" />
+    <ProgressBar android:id="@+id/pbDownload" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:progressDrawable="@drawable/sbcontrol_layor" android:minHeight="8.0dip" style="?android:attr/progressBarStyleHorizontal" />
+    <TextView android:background="@drawable/textview_bg" android:layout_width="fill_parent" android:layout_height="@dimen/undline_height" android:layout_marginLeft="@dimen/loging_margin_default_larger" android:layout_marginRight="@dimen/loging_margin_default_larger" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginBottom="2.0dip" android:baselineAligned="false">
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:textSize="17.0sp" android:textColor="@android:color/white" android:id="@+id/btnCancel" android:background="@drawable/dialog_btn_selector" android:layout_width="100.0dip" android:layout_height="36.0dip" android:layout_marginRight="15.0dip" android:text="@string/btn_cancel" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <View android:background="@drawable/map_top_devider" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:textSize="17.0sp" android:textColor="@android:color/white" android:id="@+id/btnUpgrade" android:background="@drawable/dialog_btn_selector" android:layout_width="100.0dip" android:layout_height="36.0dip" android:layout_marginLeft="15.0dip" android:text="@string/btn_ok" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

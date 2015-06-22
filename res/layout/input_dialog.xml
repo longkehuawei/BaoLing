@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/dialog_1_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/text_white" android:id="@+id/dcon_title" android:paddingLeft="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/loging_margin_default_larger" android:text="@string/confirmation_box" />
+    <TextView android:textColor="@color/text_white" android:background="#d8ffffff" android:layout_width="fill_parent" android:layout_height="@dimen/undline_height" android:layout_marginLeft="@dimen/loging_margin_default_larger" android:layout_marginRight="@dimen/loging_margin_default_larger" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_white" android:gravity="left|center" android:id="@+id/dcon_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/loging_margin" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <EditText  android:gravity="center" android:layout_gravity="center" android:id="@+id/target_input_view" android:focusable="true" android:layout_width="150.0dip" android:layout_height="wrap_content" android:text="0" android:ems="10" android:singleLine="true" android:inputType="number">
+                <requestFocus />
+            </EditText>
+            <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:id="@+id/tv_step" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_step" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@drawable/textview_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="46.0dip">
+        <RelativeLayout android:background="@drawable/dialog_btn_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:textSize="17.0sp" android:textColor="#ffffffff" android:id="@+id/btn_ok" android:background="@drawable/dialog_btn_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/btn_ok" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <View android:background="@drawable/map_top_devider" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <RelativeLayout android:background="@drawable/dialog_btn_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:textSize="17.0sp" android:textColor="#ffffffff" android:id="@+id/btn_cancel" android:background="@drawable/dialog_btn_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/btn_cancel" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

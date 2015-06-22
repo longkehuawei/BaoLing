@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/login_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/common_title_bg_colors" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <LinearLayout android:gravity="center" android:id="@+id/line_google_all_obj_loc" android:background="@drawable/lin_common_bg_selector" android:layout_width="50.0dip" android:layout_height="fill_parent">
+            <ImageView android:background="@drawable/top_back_btn1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="23.0sp" android:textColor="@color/text_white" android:id="@+id/gg_title" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sild_all_location" android:layout_centerInParent="true" />
+        <LinearLayout android:gravity="center" android:id="@+id/gatl_updata_all_tracker" android:background="@drawable/lin_common_bg_selector" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <ImageView android:gravity="center" android:background="@drawable/lin_common_bg_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/all_obj_refresh_ic_default" />
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.amap.api.maps.MapView android:id="@+id/all_tracker_loc_amap" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@color/common_title_bg_colors" android:layout_width="fill_parent" android:layout_height="74.0dip">
+        <ImageView android:id="@+id/gatl_icon" android:background="@drawable/text_click" android:layout_width="74.0dip" android:layout_height="fill_parent" android:src="@drawable/defualt_img" android:contentDescription="@string/image_content_description" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/loging_margin_default" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_white" android:id="@+id/gatl_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/last_address" android:singleLine="true" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_white" android:id="@+id/gatl_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

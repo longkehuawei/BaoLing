@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@android:color/black" android:gravity="left|center" android:id="@+id/dc_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <EditText android:textColor="@color/edittext_color" android:id="@+id/dc_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/input_sim_num" android:ems="10" android:maxLength="11" android:layout_weight="1.0" android:inputType="phone">
+        <requestFocus />
+    </EditText>
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <Button android:id="@+id/dc_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tv_setting" android:layout_weight="1.0" />
+        <Button android:id="@+id/dc_can" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_cancel" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

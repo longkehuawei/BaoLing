@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_bg" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:background="@color/common_title_bg_colors"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/rl_title"
+                android:layout_width="50.0dip"
+                android:layout_height="fill_parent"
+                android:background="@drawable/lin_common_bg_selector"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/top_back_btn1" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/user_register"
+                android:textColor="@color/text_white"
+                android:textSize="24.0sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="27.0dip"
+            android:orientation="vertical"
+            android:paddingLeft="20.0dip"
+            android:paddingRight="20.0dip" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:text="@string/user_name"
+                android:textSize="@dimen/message_hit_size" />
+
+            <EditText
+                android:id="@+id/rl_name"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edittext_height"
+                android:layout_gravity="center"
+                android:background="@drawable/common_edit_bg"
+                android:hint="@string/input_account"
+                android:paddingLeft="5.0dip"
+                android:singleLine="true"
+                android:textColor="@color/edittext_color"
+                android:textSize="@dimen/message_hit_size" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="14.0dip"
+            android:orientation="vertical"
+            android:paddingLeft="20.0dip"
+            android:paddingRight="20.0dip" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/_password"
+                android:textSize="@dimen/message_hit_size" />
+
+            <EditText
+                android:id="@+id/rl_pass"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edittext_height"
+                android:background="@drawable/common_edit_bg"
+                android:ems="10"
+                android:hint="@string/password_cannot_empty"
+                android:inputType="textPassword"
+                android:paddingLeft="5.0dip"
+                android:singleLine="true"
+                android:textColor="@color/edittext_color"
+                android:textSize="@dimen/message_hit_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="14.0dip"
+            android:orientation="vertical"
+            android:paddingLeft="20.0dip"
+            android:paddingRight="20.0dip" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/confirm_password"
+                android:textSize="@dimen/message_hit_size" />
+
+            <EditText
+                android:id="@+id/rl_confirm_passcon"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edittext_height"
+                android:background="@drawable/common_edit_bg"
+                android:ems="10"
+                android:hint="@string/hit_confirm_password"
+                android:inputType="textPassword"
+                android:paddingLeft="5.0dip"
+                android:singleLine="true"
+                android:textColor="@color/edittext_color"
+                android:textSize="@dimen/message_hit_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="14.0dip"
+            android:orientation="vertical"
+            android:paddingLeft="20.0dip"
+            android:paddingRight="20.0dip" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/_email"
+                android:textSize="@dimen/message_hit_size" />
+
+            <EditText
+                android:id="@+id/tv_auto_email"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edittext_height"
+                android:background="@drawable/common_edit_bg"
+                android:hint="@string/hit_email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="5.0dip"
+                android:singleLine="true"
+                android:textColor="@color/edittext_color"
+                android:textSize="@dimen/message_hit_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line_regist_agree"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14.0dip"
+            android:orientation="horizontal"
+            android:paddingLeft="20.0dip" >
+
+            <ImageView
+                android:id="@+id/rl_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_sign_pwd_off_on"
+                android:contentDescription="@string/image_content_description" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:text="@string/acsp_user_agreement"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12.0sp" />
+
+            <TextView
+                android:id="@+id/rl_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_agreement"
+                android:textColor="@color/tab_tv_bg"
+                android:textSize="12.0sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/rl_reg_"
+            android:layout_width="fill_parent"
+            android:layout_height="43.0dip"
+            android:layout_gravity="center"
+            android:layout_marginLeft="43.0dip"
+            android:layout_marginRight="43.0dip"
+            android:layout_marginTop="25.0dip"
+            android:background="@drawable/btn_common_bg_selector_green"
+            android:text="@string/_register"
+            android:textColor="@android:color/white"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+
+</ScrollView>

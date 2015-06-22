@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/container" android:background="@drawable/login_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/line_game_course_title" android:background="@color/common_title_bg_colors" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <LinearLayout android:gravity="center" android:id="@+id/game_course_back" android:background="@drawable/lin_common_bg_selector" android:layout_width="50.0dip" android:layout_height="fill_parent">
+            <ImageView android:background="@drawable/top_back_btn1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="24.0sp" android:textColor="@color/text_white" android:gravity="center" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/game_course" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <FrameLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:gravity="center" android:id="@+id/tv_gun_bg" android:background="@drawable/game_choose_in" android:layout_width="80.0dip" android:layout_height="32.0dip" />
+            <TextView android:gravity="center" android:id="@+id/tv_drum_bg" android:background="@drawable/game_choose_out" android:layout_width="80.0dip" android:layout_height="32.0dip" />
+            <TextView android:gravity="center" android:id="@+id/tv_magic_wand_bg" android:background="@drawable/game_choose_out" android:layout_width="80.0dip" android:layout_height="32.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:gravity="center" android:id="@+id/tv_gun" android:layout_width="80.0dip" android:layout_height="32.0dip" android:text="@string/game_type_gun" />
+            <TextView android:textSize="16.0sp" android:gravity="center" android:id="@+id/tv_drum" android:layout_width="80.0dip" android:layout_height="32.0dip" android:text="@string/game_type_drum" />
+            <TextView android:textSize="16.0sp" android:gravity="center" android:id="@+id/tv_magic_wand" android:layout_width="80.0dip" android:layout_height="32.0dip" android:text="@string/game_type_magic" />
+        </LinearLayout>
+    </FrameLayout>
+    <android.support.v4.view.ViewPager android:id="@+id/viewpager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="20.0dip" android:paddingTop="15.0dip" android:paddingRight="20.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_gravity="left" android:id="@+id/rl_hand" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:background="@drawable/game_text_border" android:layout_width="90.0dip" android:layout_height="32.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="90.0dip" android:layout_height="32.0dip" android:baselineAligned="false">
+                <RelativeLayout android:id="@+id/rl_left" android:background="@drawable/game_close_btn" android:layout_width="0.0dip" android:layout_height="32.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="12.0sp" android:textColor="@color/text_white" android:id="@+id/tv_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/game_hand_left" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_right" android:background="@null" android:layout_width="0.0dip" android:layout_height="32.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="12.0sp" android:textColor="@color/text_gray" android:id="@+id/tv_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/game_hand_right" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <Button android:textSize="16.0sp" android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@+id/bt_begin" android:background="@drawable/game_begin_btn" android:layout_width="120.0dip" android:layout_height="32.0dip" android:text="@string/game_begin_game" />
+    </LinearLayout>
+</LinearLayout>

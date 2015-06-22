@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/login_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/rl_about_us" android:background="@color/common_title_bg_colors" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <LinearLayout android:gravity="center" android:id="@+id/line_about_us" android:background="@drawable/lin_common_bg_selector" android:layout_width="50.0dip" android:layout_height="fill_parent">
+            <ImageView android:background="@drawable/top_back_btn1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="24.0sp" android:textColor="@color/text_white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/tv_about_us_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginRight="50.0dip" android:text="@string/sild_about" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center" android:id="@+id/apk_share" android:background="@drawable/lin_common_bg_selector" android:visibility="invisible" android:layout_width="50.0dip" android:layout_height="fill_parent">
+            <ImageView android:background="@drawable/ic_action_share" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/im_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="75.0dip" android:src="@drawable/login_logo" />
+            <ImageView android:id="@+id/im_logo_lbn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="75.0dip" android:src="@drawable/login_logo" />
+            <TextView android:textSize="14.0sp" android:gravity="center" android:id="@+id/versionNumberText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:text="@string/current_version_code" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/line_about_us_group" android:background="@drawable/about_us_bg_write" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                <RelativeLayout android:id="@+id/rl_about_us_net_" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="43.0dip">
+                    <ImageView android:id="@+id/image_net" android:background="@drawable/about_us_jiantou_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="20.0sp" android:textColor="@color/about_us_text_selector" android:gravity="left" android:id="@+id/btn_abardeen_net" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/guanfangwangzhan" android:layout_toLeftOf="@+id/image_net" android:layout_alignParentLeft="true" />
+                </RelativeLayout>
+                <ImageView android:background="@drawable/about_us_devider_line_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+                <RelativeLayout android:id="@+id/rl_check_updata" android:clickable="true" android:layout_width="fill_parent" android:layout_height="43.0dip">
+                    <ImageView android:id="@+id/image_update" android:background="@drawable/about_us_jiantou_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="20.0sp" android:textColor="@color/about_us_text_selector" android:gravity="left" android:id="@+id/check_update_btn" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/check_update" android:layout_toLeftOf="@+id/image_update" android:layout_alignParentLeft="true" />
+                </RelativeLayout>
+                <ImageView android:background="@drawable/about_us_devider_line_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+                <RelativeLayout android:id="@+id/rl_user_agressment" android:clickable="true" android:layout_width="fill_parent" android:layout_height="43.0dip">
+                    <ImageView android:id="@+id/image_btn" android:background="@drawable/about_us_jiantou_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="20.0sp" android:textColor="@color/about_us_text_selector" android:gravity="left" android:id="@+id/user_agreement_btn" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_agreement" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                </RelativeLayout>
+                <ImageView android:id="@+id/line_above_back_info" android:background="@drawable/about_us_devider_line_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+                <RelativeLayout android:id="@+id/rl_back_info" android:clickable="true" android:layout_width="fill_parent" android:layout_height="43.0dip">
+                    <ImageView android:background="@drawable/about_us_jiantou_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="20.0sp" android:textColor="@color/about_us_text_selector" android:gravity="left" android:id="@+id/suggest_info" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_back_info" android:layout_alignParentLeft="true" />
+                </RelativeLayout>
+                <ImageView android:id="@+id/iv_back_info" android:background="@drawable/about_us_devider_line_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+                <RelativeLayout android:id="@+id/rl_change_pwd" android:clickable="true" android:layout_width="fill_parent" android:layout_height="43.0dip">
+                    <ImageView android:background="@drawable/about_us_jiantou_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="20.0sp" android:textColor="@color/about_us_text_selector" android:gravity="left" android:id="@+id/change_pwd" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/change_password" android:layout_alignParentLeft="true" />
+                </RelativeLayout>
+                <ImageView android:id="@+id/line_above_contact_us" android:background="@drawable/about_us_devider_line_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+                <RelativeLayout android:id="@+id/rl_contact_us" android:clickable="true" android:layout_width="fill_parent" android:layout_height="43.0dip">
+                    <ImageView android:background="@drawable/about_us_jiantou_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="20.0sp" android:textColor="@color/about_us_text_selector" android:gravity="left" android:id="@+id/contact_us" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_us" android:layout_alignParentLeft="true" />
+                </RelativeLayout>
+                <ImageView android:id="@+id/line_above_software_operation" android:background="@drawable/about_us_devider_line_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+                <RelativeLayout android:id="@+id/software_operation" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="43.0dip">
+                    <ImageView android:background="@drawable/about_us_jiantou_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="20.0sp" android:textColor="@color/about_us_text_selector" android:gravity="left" android:id="@+id/software_operation_view" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/software_operation" android:layout_alignParentLeft="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

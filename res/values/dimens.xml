@@ -1,0 +1,84 @@
+<resources>
+
+    <!-- slidingmenu配置 -->
+    <dimen name="slidingmenu_offset">120dp</dimen>
+    <dimen name="shadow_width">16dp</dimen>
+    <dimen name="alphabet_size">12.0dip</dimen>
+    <dimen name="umeng_socialize_pad_window_height">350.0dip</dimen>
+    <dimen name="umeng_socialize_pad_window_width">580.0dip</dimen>
+    <dimen name="activity_horizontal_margin">16.0dip</dimen>
+    <dimen name="activity_vertical_margin">16.0dip</dimen>
+    <dimen name="loging_image_top">32.0dip</dimen>
+    <dimen name="loging_margin_default">4.0dip</dimen>
+    <dimen name="loging_margin_small">12.0dip</dimen>
+    <dimen name="loging_margin">16.0dip</dimen>
+    <dimen name="loging_margin_default_larger">10.0dip</dimen>
+    <dimen name="loging_margin_default_small">5.0dip</dimen>
+    <dimen name="undline_height">1.0dip</dimen>
+    <dimen name="shadow_width">15.0dip</dimen>
+    <dimen name="slidingmenu_offset">120.0dip</dimen>
+    <dimen name="list_padding">10.0dip</dimen>
+    <dimen name="title_height">58.0dip</dimen>
+    <dimen name="title_padding_left">20.0dip</dimen>
+    <dimen name="edittext_height">40.0dip</dimen>
+    <dimen name="item_margin_right">25.0dip</dimen>
+    <dimen name="item_margin_left">25.0dip</dimen>
+    <dimen name="btn_1_width">210.0dip</dimen>
+    <dimen name="btn_1_height">59.0dip</dimen>
+    <dimen name="btn_2_height">43.0dip</dimen>
+    <dimen name="bottom_bar_height">80.0dip</dimen>
+    <dimen name="icon_height">72.0dip</dimen>
+    <dimen name="icon_margin_left">4.0dip</dimen>
+    <dimen name="user_title_leftright_padding">12.0dip</dimen>
+    <dimen name="user_title_summary_padding">6.0dip</dimen>
+    <dimen name="user_name_font_size">22.0sp</dimen>
+    <dimen name="bottom_bar_btn_height">39.0dip</dimen>
+    <dimen name="bottom_bar_btn_width">113.0dip</dimen>
+    <dimen name="bottom_bar_btn_padding">42.0dip</dimen>
+    <dimen name="edit_padding_left">5.0dip</dimen>
+    <dimen name="title_btn_1_width">82.0dip</dimen>
+    <dimen name="title_btn_1_margin_right">3.0dip</dimen>
+    <dimen name="second_title_height">36.0dip</dimen>
+    <dimen name="edittext_size">20.0sp</dimen>
+    <dimen name="textview_size">20.0sp</dimen>
+    <dimen name="title_text_size">20.0sp</dimen>
+    <dimen name="title_btn_paddingtop">7.0dip</dimen>
+    <dimen name="text_setting_margin">22.0dip</dimen>
+    <dimen name="icon_setting_margin">13.0dip</dimen>
+    <dimen name="item_setting_height">68.0dip</dimen>
+    <dimen name="follow_dialog_time_text_size">8.0dip</dimen>
+    <dimen name="main_location_text_size">13.0sp</dimen>
+    <dimen name="title_text_size_biger">25.0sp</dimen>
+    <dimen name="message_hit_size">16.0sp</dimen>
+    <dimen name="btn_margin_bottom">20.0dip</dimen>
+    <dimen name="text_status_size">18.0dip</dimen>
+    <dimen name="setting_right_text_size">19.0dip</dimen>
+    <dimen name="setting_changgui_textsize">16.0dip</dimen>
+    <dimen name="title_usual_height">50.0dip</dimen>
+    <dimen name="bottom_usual_height">74.0dip</dimen>
+    <dimen name="policy_text_size1">14.0sp</dimen>
+    <dimen name="policy_text_size2">10.0sp</dimen>
+    <dimen name="policy_text_size3">18.0sp</dimen>
+    <dimen name="policy_et_height">24.0dip</dimen>
+
+    <item name="match_parent" type="dimen">-1</item>
+    <item name="wrap_content" type="dimen">-2</item>
+    <item name="responsive_width" type="dimen">@dimen/match_parent</item>
+    
+    <dimen name="menu_item_padding">2dp</dimen>
+    <dimen name="text_right_padding">28dp</dimen>
+    <dimen name="text_right_translation">8dp</dimen>
+    <dimen name="text_wrapper_right_margin">2dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="menu_text_size">15sp</dimen>
+    
+    <dimen name="tool_bar_text_size">22sp</dimen>
+    <dimen name="main_screen_side_padding">10dp</dimen>
+    <dimen name="text_top_padding">25dp</dimen>
+    <dimen name="title_text_size">26sp</dimen>
+    <dimen name="menu_item_size">50dp</dimen>
+    
+     <dimen name="x_offset">4.5dp</dimen>
+     <dimen name="y_offset">2dp</dimen>
+
+</resources>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@color/common_title_bg_colors" >
+
+        <TextView
+            android:id="@+id/bd_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/sild_all_location"
+            android:textColor="@color/text_white"
+            android:textSize="24.0sp" />
+
+        <LinearLayout
+            android:id="@+id/all_loc_line_current"
+            android:layout_width="50.0dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/lin_common_bg_selector"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_back_btn1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/batl_updata_all_tracker"
+            android:layout_width="50.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/lin_common_bg_selector"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lin_common_bg_selector"
+                android:gravity="center"
+                android:src="@drawable/all_obj_refresh_ic_default" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0" >
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/batl_bmapsView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" />
+
+        <LinearLayout
+            android:id="@+id/line_all_obj_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right|center"
+            android:layout_marginBottom="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/ib_map_fangda_all_obj_loc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/map_zoon_fangda_selector" />
+
+            <ImageButton
+                android:id="@+id/ib_map_suoxiao_all_obj_loc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/map_zoon_suoxiao_selector" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="74.0dip"
+        android:background="@color/common_title_bg_colors"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_all_obj_photo"
+            android:layout_width="74.0dip"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/common_title_bg_colors"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/loging_margin_default" >
+
+                <TextView
+                    android:id="@+id/batl_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/last_address"
+                    android:textColor="@color/text_white"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/batl_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/batl_time"
+                    android:singleLine="true"
+                    android:textColor="@color/text_white"
+                    android:textSize="16.0sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/login_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:background="@color/common_title_bg_colors" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <LinearLayout android:gravity="center" android:id="@+id/history_line_location" android:background="@drawable/lin_common_bg_selector" android:layout_width="50.0dip" android:layout_height="fill_parent">
+            <ImageView android:background="@drawable/top_back_btn1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="24.0sp" android:textColor="@color/text_white" android:gravity="center" android:id="@+id/bd_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sild_history_location" android:layout_centerInParent="true" />
+        <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/tv_clear_all" android:layout_width="50.0dip" android:layout_height="fill_parent" android:text="@string/del_all_text_message" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.baidu.mapapi.map.MapView android:id="@+id/bhl_bmapsView" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:layout_gravity="bottom|right|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_marginBottom="60.0dip">
+            <ImageButton android:id="@+id/ib_map_fangda_history" android:background="@drawable/map_zoon_fangda_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+            <ImageButton android:id="@+id/ib_map_suoxiao_history" android:background="@drawable/map_zoon_suoxiao_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/bhl_line_address" android:background="@color/common_title_bg_colors" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginBottom="1.0dip" android:alpha="8.0">
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:id="@+id/bhl_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:id="@+id/bhl_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:singleLine="true" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="bottom" android:background="@drawable/textview_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@color/common_title_bg_colors" android:layout_width="fill_parent" android:layout_height="74.0dip">
+        <LinearLayout android:gravity="center" android:id="@+id/line_bhl_data_left" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@+id/bhl_data_left" android:background="@drawable/history_data_before_selector_ten" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@+id/line_bhl_time_left" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@+id/bhl_time_left" android:background="@drawable/history_data_before_selector" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@+id/bhl_data" android:layout_width="74.0dip" android:layout_height="fill_parent" android:text="23/100" />
+        <LinearLayout android:gravity="center" android:id="@+id/line_bhl_time_right" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@+id/bhl_time_right" android:background="@drawable/history_data_after_selector" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@+id/line_bhl_data_right" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@+id/bhl_data_right" android:background="@drawable/history_data_after_selector_ten" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

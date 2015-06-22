@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/dialog_1_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/text_white" android:id="@id/dcon_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/loging_margin_default_larger" android:text="@string/confirmation_box" />
+    <TextView android:background="#d8ffffff" android:layout_width="fill_parent" android:layout_height="@dimen/undline_height" android:layout_marginLeft="@dimen/loging_margin_default_larger" android:layout_marginRight="@dimen/loging_margin_default_larger" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/text_white" android:gravity="left|center" android:id="@id/dcon_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/loging_margin" />
+    <View android:background="@drawable/textview_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/loging_margin_default">
+        <Button android:textColor="#ffffffff" android:id="@id/dcon_ok" android:background="@drawable/dialog_btn_selector" android:paddingLeft="@dimen/loging_image_top" android:paddingRight="@dimen/loging_image_top" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/btn_ok" />
+    </LinearLayout>
+</LinearLayout>

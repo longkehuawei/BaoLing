@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_1_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_edit_chat_time_dialog_name"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_marginLeft="20.0dip"
+        android:gravity="left|center"
+        android:singleLine="true"
+        android:text="@string/_name"
+        android:textColor="#ffffffff"
+        android:textSize="20.0sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginLeft="@dimen/loging_margin"
+        android:layout_marginRight="@dimen/loging_margin"
+        android:background="@drawable/textview_bg" />
+
+    <TextView
+        android:id="@+id/tv_edit_chat_time_dialog_play"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_marginLeft="20.0dip"
+        android:gravity="left|center"
+        android:text="@string/text_play"
+        android:textColor="@color/item_text_onclick_selector" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginLeft="@dimen/loging_margin"
+        android:layout_marginRight="@dimen/loging_margin"
+        android:background="@drawable/textview_bg" />
+
+    <TextView
+        android:id="@+id/tv_edit_chat_time_dialog_resend"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_marginLeft="20.0dip"
+        android:gravity="left|center"
+        android:text="@string/text_re_send"
+        android:textColor="@color/item_text_onclick_selector" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginLeft="@dimen/loging_margin"
+        android:layout_marginRight="@dimen/loging_margin"
+        android:background="@drawable/textview_bg" />
+
+    <TextView
+        android:id="@+id/tv_edit_chat_time_dialog_delete"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_marginLeft="20.0dip"
+        android:gravity="left|center"
+        android:text="@string/title_delet_object"
+        android:textColor="@color/item_text_onclick_selector" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginLeft="@dimen/loging_margin"
+        android:layout_marginRight="@dimen/loging_margin"
+        android:background="@drawable/textview_bg" />
+
+    <TextView
+        android:id="@+id/tv_edit_chat_time_dialog_delete_multi"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_marginLeft="20.0dip"
+        android:gravity="left|center"
+        android:text="@string/text_mul_del"
+        android:textColor="@color/item_text_onclick_selector" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginLeft="@dimen/loging_margin"
+        android:layout_marginRight="@dimen/loging_margin"
+        android:background="@drawable/textview_bg" />
+
+</LinearLayout>

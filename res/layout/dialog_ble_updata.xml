@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/dialog_1_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/text_black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/loging_margin_default_larger" android:text="@string/confirmation_ble_updata" />
+        <View android:background="@color/textview_bg" android:layout_width="fill_parent" android:layout_height="@dimen/undline_height" android:layout_marginLeft="@dimen/loging_margin_default_larger" android:layout_marginRight="@dimen/loging_margin_default_larger" />
+        <ListView android:id="@+id/dbu_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <View android:background="@color/textview_bg" android:layout_width="fill_parent" android:layout_height="@dimen/undline_height" android:layout_marginLeft="@dimen/loging_margin_default_larger" android:layout_marginRight="@dimen/loging_margin_default_larger" />
+        <Button android:textSize="18.0sp" android:id="@+id/dbu_can" android:background="@drawable/dialog_btn_selector" android:paddingLeft="@dimen/loging_image_top" android:paddingRight="@dimen/loging_image_top" android:layout_width="wrap_content" android:layout_height="36.0dip" android:text="@string/confirmation_ble_cancle" />
+    </LinearLayout>
+</LinearLayout>

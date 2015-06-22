@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/login_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/setting_root" android:background="@color/common_title_bg_colors" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <LinearLayout android:gravity="center" android:id="@+id/line_map_area_google" android:background="@drawable/lin_common_bg_selector" android:layout_width="50.0dip" android:layout_height="fill_parent">
+            <ImageView android:background="@drawable/top_back_btn1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="24.0sp" android:textColor="@color/text_white" android:id="@+id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/safety_area" android:layout_centerInParent="true" />
+        <LinearLayout android:gravity="center" android:background="@drawable/lin_common_bg_selector" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <TextView android:textSize="20.0sp" android:textColor="@color/text_white" android:gravity="center" android:id="@+id/SettingButton" android:background="@drawable/lin_common_bg_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/set" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/bottomBar" android:background="@color/common_title_bg_colors" android:layout_width="fill_parent" android:layout_height="74.0dip" android:layout_marginBottom="0.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/userinfo_root" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/icon" android:layout_width="@dimen/icon_height" android:layout_height="@dimen/icon_height" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/user_name_root" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/user_title_leftright_padding" android:layout_marginRight="@dimen/user_title_leftright_padding">
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/text_white" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/text_white" android:id="@+id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/user_title_summary_padding" />
+            </LinearLayout>
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/text_white" android:layout_gravity="center_vertical" android:id="@+id/area_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/user_title_leftright_padding" android:layout_marginRight="@dimen/user_title_leftright_padding" android:text="@string/map_draw_area" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/bottom_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <Button android:textSize="20.0sp" android:textColor="@color/text_white" android:id="@+id/leftButton" android:background="@drawable/dialog_btn_selector" android:layout_width="@dimen/bottom_bar_btn_width" android:layout_height="@dimen/bottom_bar_btn_height" android:text="@string/btn_ok" android:layout_weight="1.0" style="@style/buttonStyle1" />
+            <Button android:textSize="20.0sp" android:textColor="@color/text_white" android:id="@+id/rightButton" android:background="@drawable/dialog_btn_selector" android:layout_width="@dimen/bottom_bar_btn_width" android:layout_height="@dimen/bottom_bar_btn_height" android:layout_marginLeft="@dimen/bottom_bar_btn_padding" android:text="@string/set_again" android:layout_weight="1.0" style="@style/buttonStyle1" />
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@+id/bottomBar" android:layout_below="@+id/setting_root">
+        <FrameLayout android:id="@+id/MapRoot" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.amap.api.maps.MapView android:id="@+id/area_amap" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <ImageView android:layout_gravity="bottom|left|center" android:id="@+id/gmas_location_type" android:background="@drawable/to_last_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" />
+    </FrameLayout>
+</RelativeLayout>
