@@ -2,12 +2,7 @@ package com.yimeng.baolingtong;
 
 import java.util.ArrayList;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
-import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -16,12 +11,10 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ExpandableListView;
-import android.widget.Toast;
 import android.widget.ExpandableListView.OnChildClickListener;
 import android.widget.ExpandableListView.OnGroupClickListener;
 import android.widget.LinearLayout;
 
-import com.ab.cache.image.AbImageBaseCache;
 import com.ab.fragment.AbFragment;
 import com.ab.image.AbImageLoader;
 import com.ab.model.AbMenuItem;
@@ -31,12 +24,6 @@ import com.ab.task.AbTaskListener;
 import com.ab.util.AbDialogUtil;
 import com.ab.util.AbFileUtil;
 import com.ab.util.AbToastUtil;
-import com.andbase.web.HttpUtils;
-import com.lidroid.xutils.exception.HttpException;
-import com.lidroid.xutils.http.RequestParams;
-import com.lidroid.xutils.http.ResponseInfo;
-import com.lidroid.xutils.http.callback.RequestCallBack;
-import com.lidroid.xutils.http.client.HttpRequest;
 import com.yimeng.baolingtong.adpater.LeftMenuAdapter;
 
 public class MainMenuFragment extends AbFragment {
@@ -98,11 +85,14 @@ public class MainMenuFragment extends AbFragment {
 		ArrayList<ArrayList<AbMenuItem>> mChilds = new ArrayList<ArrayList<AbMenuItem>>();
 		mChilds.add(mChild1);
 		mChilds.add(mChild2);
-		/*TextView userName=new TextView(getActivity());
-		userName.setText("小明");
-		userName.setTextColor(getResources().getColor(R.color.white));
-		userName.setTextSize(20);*/
-		LinearLayout userlayout=(LinearLayout) LayoutInflater.from(getActivity()).inflate(R.layout.menu_headview, null);
+		/*
+		 * TextView userName=new TextView(getActivity());
+		 * userName.setText("小明");
+		 * userName.setTextColor(getResources().getColor(R.color.white));
+		 * userName.setTextSize(20);
+		 */
+		LinearLayout userlayout = (LinearLayout) LayoutInflater.from(
+				getActivity()).inflate(R.layout.menu_headview, null);
 		mMenuListView.addHeaderView(userlayout);
 		mAdapter = new LeftMenuAdapter(mActivity, mGroupName, mChilds);
 		mMenuListView.setAdapter(mAdapter);
@@ -137,7 +127,7 @@ public class MainMenuFragment extends AbFragment {
 
 		return view;
 	}
-	
+
 	public interface OnChangeViewListener {
 		public abstract void onChangeView(int groupPosition, int childPosition);
 	}
@@ -198,12 +188,10 @@ public class MainMenuFragment extends AbFragment {
 		m9.setText("关于");
 		mChild2.add(m9);
 
-		
 		mAdapter.notifyDataSetChanged();
 		for (int i = 0; i < mGroupName.size(); i++) {
 			mMenuListView.expandGroup(i);
 		}
-
 
 		/*
 		 * final String shareStr = this.getResources().getString(
@@ -293,7 +281,5 @@ public class MainMenuFragment extends AbFragment {
 		});
 
 	}
-
-	
 
 }
